@@ -1,7 +1,7 @@
 # Analitica de Datos
 
 En el siguiente repositorio, se encuentra la solución de
-los talles Finales, también se podra encontrar la presentación 
+los Talleres Finales, también se podra encontrar la presentación 
 y el código presentado para el proyecto final.
 
 Presentado por:
