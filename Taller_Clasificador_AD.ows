@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(2.0, 154.0)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Seleccionar cabello y especies" position="(217.0, -49.0)" />
+		<node id="2" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Grupo por Especies" position="(373.33333333333337, -184.88888888888886)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Visualizacion de resultados" position="(508.0, -186.0)" />
+		<node id="4" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Grupo por cabello" position="(376.0, 54.0)" />
+		<node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Visualizacion de resultados" position="(526.0, 55.0)" />
+		<node id="6" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Seleccionar Diente y especie" position="(230.88888888888897, 239.8888888888889)" />
+		<node id="7" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Grupo por especies basados en dientes" position="(396.7777777777779, 238.7777777777776)" />
+		<node id="8" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Visualizacion de resultados" position="(551.4444444444446, 238.66666666666657)" />
+		<node id="9" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(233.33333333333348, 372.44444444444446)" />
+		<node id="10" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(402.6666666666668, 371.33333333333337)" />
+		<node id="11" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Tree Viewer" position="(575.7777777777779, 372.22222222222223)" />
+		<node id="12" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="" position="(187.6666666666668, 595.6666666666666)" />
+		<node id="13" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="" position="(403.77777777777794, 595.7777777777776)" />
+		<node id="14" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="" position="(620.5555555555557, 595.8888888888888)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="1" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="0" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="7" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="8" source_node_id="0" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="9" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="10" source_node_id="10" sink_node_id="11" source_channel="Model" sink_channel="Tree" enabled="true" source_channel_id="model" sink_channel_id="tree" />
+		<link id="11" source_node_id="0" sink_node_id="12" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="12" source_node_id="12" sink_node_id="13" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="13" source_node_id="13" sink_node_id="14" source_channel="Model" sink_channel="Tree" enabled="true" source_channel_id="model" sink_channel_id="tree" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(4.999999999999979, 120.0)" end="(5.999999999999979, 60.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(-105.0, 4.0, 213.0, 78.0)" font-family="Segoe UI" font-size="16">1. Carga la base de datos completa de animales.
+</text>
+		<arrow id="2" start="(219.00000000000009, -76.0)" end="(219.00000000000009, -101.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(69.111111111111, -139.00000000000006, 195.22222222222217, 58.888888888888886)" font-family="Segoe UI" font-size="16">2. Filtra solo las columnas cabello y especie.
+</text>
+		<arrow id="4" start="(379.00000000000006, 22.0)" end="(380.00000000000006, -9.0)" fill="#C1272D" />
+		<arrow id="5" start="(294.0, -208.0)" end="(294.0, -234.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(635.5555555555555, -211.55555555555557, 422.0, 78.0)" font-family="Segoe UI" font-size="16">4. Se visualiza como se segmenta la base de datos en dos clases (con pelo vs. sin pelo) y evidencia que ‘Cabello’ es un atributo decisivo para distinguir mamíferos de reptiles</text>
+		<arrow id="7" start="(544.9999999999999, -183.0)" end="(635.4444444444443, -182.11111111111114)" fill="#C1272D" />
+		<text id="8" type="text/plain" rect="(644.8888888888889, 23.222222222222214, 443.0, 82.0)" font-family="Segoe UI" font-size="16">6. Muestra que dentro de cada especie el atributo Cabello es uniforme (True en mamíferos, False en reptiles), reforzando que el pelo es un rasgo que separa claramente ambas clases.</text>
+		<arrow id="9" start="(569.9999999999999, 50.0)" end="(640.333333333333, 48.77777777777777)" fill="#C1272D" />
+		<text id="10" type="text/plain" rect="(295.0, -60.0, 346.0, 58.0)" font-family="Segoe UI" font-size="16">5. Agrupar por Especie y aplicar la agregación Concatenate sobre la columna Cabello.</text>
+		<text id="11" type="text/plain" rect="(227.77777777777794, -298.888888888889, 263.33333333333337, 71.11111111111109)" font-family="Segoe UI" font-size="16">3. Agrupar por Cabello y aplicar la agregación Concatenate sobre la columna Especie.
+</text>
+		<text id="12" type="text/plain" rect="(137.777777777778, 96.6666666666668, 146.66666666666674, 78.0)" font-family="Segoe UI" font-size="16">7.  Filtra solo las columnas Diente y especie.</text>
+		<arrow id="13" start="(214.44444444444446, 150.0)" end="(233.33333333333334, 205.55555555555557)" fill="#C1272D" />
+		<text id="14" type="text/plain" rect="(283.3333333333335, 126.66666666666674, 258.88888888888914, 78.0)" font-family="Segoe UI" font-size="16">8. Se agrupa por Diente y se aplica la agregación Concatenate sobre la columna Especie.</text>
+		<arrow id="15" start="(331.11111111111114, 197.7777777777778)" end="(366.6666666666667, 217.7777777777778)" fill="#C1272D" />
+		<text id="16" type="text/plain" rect="(645.5555555555558, 133.33333333333337, 518.8888888888887, 179.77777777777777)" font-family="Segoe UI" font-size="16">9. La tabla muestra dos filas, una por el valor de Diente:
+• False → lista concatenada de las especies sin dientes (Mamífero, Reptil).
+• True → lista concatenada de las especies con dientes (Mamífero y Reptil repetidos).
+
+Así se comprueba que la variable Diente no separa claramente mamíferos de reptiles, pues ambos aparecen en ambos grupos</text>
+		<arrow id="17" start="(588.8888888888889, 235.55555555555557)" end="(630.0, 235.55555555555557)" fill="#C1272D" />
+		<text id="18" type="text/plain" rect="(163.33333333333337, 440.00000000000006, 256.6666666666667, 100.0)" font-family="Segoe UI" font-size="16">10. Filtra las columnas a usar en el modelo:
+ • Target: Especie (clase a predecir).
+ • Features: Cabello, Patas, Diente.</text>
+		<arrow id="19" start="(263.33333333333337, 395.5555555555556)" end="(293.33333333333337, 442.22222222222223)" fill="#C1272D" />
+		<arrow id="20" start="(424.4444444444444, 395.55555555555554)" end="(462.2222222222222, 436.6666666666666)" fill="#C1272D" />
+		<arrow id="21" start="(618.8888888888889, 366.66666666666674)" end="(746.6666666666666, 408.88888888888874)" fill="#C1272D" />
+		<text id="22" type="text/plain" rect="(767.7777777777782, 381.11111111111086, 367.7777777777776, 166.0)" font-family="Segoe UI" font-size="16">12. Visualiza de forma interactiva la estructura y las reglas de cada árbol: nodos con etiquetas de clase, porcentaje de ejemplos y fracciones (acierto total en las hojas rojas/azules). Permite comprobar qué atributos aparecen en la raíz, cuántos niveles se generan y la pureza de cada hoja.</text>
+		<text id="23" type="text/plain" rect="(150.0, 666.6666666666666, 257.77777777777777, 100.0)" font-family="Segoe UI" font-size="16">13. Filtra las columnas a usar en el modelo:
+ • Target: Especie (clase a predecir).
+ • Features: Patas, Diente.</text>
+		<arrow id="24" start="(218.88888888888889, 621.1111111111111)" end="(241.11111111111111, 661.1111111111111)" fill="#C1272D" />
+		<text id="25" type="text/plain" rect="(421.1111111111111, 432.22222222222234, 273.3333333333335, 117.33333333333337)" font-family="Segoe UI" font-size="16">11. Se entrena un clasificador de arbol de decisión con la columna cabello como split raíz, que separa 100% Mamíferos(true)  y 100% reptiles(false).</text>
+		<text id="26" type="text/plain" rect="(447.7777777777778, 676.6666666666666, 360.0, 76.66666666666652)" font-family="Segoe UI" font-size="16">14. Se entrena un clasificador de arbol de decisión, dividiendo primero por Patas y luego por diente.</text>
+		<arrow id="27" start="(431.11111111111114, 621.1111111111111)" end="(505.5555555555556, 671.1111111111111)" fill="#C1272D" />
+		<arrow id="28" start="(631.1111111111111, 560.0)" end="(756.6666666666667, 471.11111111111114)" fill="#C1272D" />
+		<text id="29" type="text/plain" rect="(-118.57142857142858, -340.00000000000006, 318.57142857142856, 188.0)" font-family="Segoe UI" font-size="16">TALLER 1 - CLASIFICADOR POR ARBOL DE DECISIÓN
+
+Presentado por:
+
+Julian Felipe Gutierrez Ramirez 1193577237
+Felipe Idarraga Quintero 100263670</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/julia/Downloads/Animales_zoo.csv'}, {'encoding': 'utf-8', 'delimiter': ';', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/julia/Downloads', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02t\x00\x00\x00\xde\x00\x00\x03\x8b\x00\x00\x025\x00\x00\x02u\x00\x00\x00\xfc\x00\x00\x03\x8a\x00\x00\x024\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02u\x00\x00\x00\xfc\x00\x00\x03\x8a\x00\x00\x024', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASV8wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdMAAABO
+AAAELAAAAsQAAAHUAAAAbAAABCsAAALDAAAAAAAAAAAGAAAAAdQAAABsAAAEKwAAAsOUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwKVW5uYW1lZDogMJRLAoaUjAlhdmFpbGFibGWUSwCGlIwGRGllbnRl
+lEsBhpRoFUsBhpSMB1Jlc3BpcmGUSwGGlGgVSwKGlIwFUGF0YXOUSwGGlGgVSwOGlIwHQ2FiZWxs
+b5RLAYaUjAlhdHRyaWJ1dGWUSwCGlIwHRXNwZWNpZZRLAYaUaCJLAYaUdUr+////hpRoB0sBdYwK
+YXR0cmlidXRlc5R9lChoE0sCaBdLAWggSwFoGksBaB1LAWgkSwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="2" format="pickle">gASVgAEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAFaAAAAgAAABQ0AAAHYAAABWwAAAJ4AAAUMAAAB
+1wAAAAAAAAAABgAAAAFbAAAAngAABQwAAAHXlIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMDGFnZ3JlZ2F0aW9uc5R9lCiMB0NhYmVsbG+US2WGlI+UjAdFc3BlY2lllEtlhpSPlCiM
+C0NvbmNhdGVuYXRllJB1Svz///+GlIwIZ2JfYXR0cnOUXZRoEUtlhpRhSv3///+GlGgFSwF1jAph
+dHRyaWJ1dGVzlH2UKIwHQ2FiZWxsb5RLAYwHRXNwZWNpZZRLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00u\x00\x00\x00\xeb\x00\x00\x05\x7f\x00\x00\x02\xef\x00\x00\x00v\x00\x00\x01\t\x00\x00\x05~\x00\x00\x02\xee\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00v\x00\x00\x01\t\x00\x00\x05~\x00\x00\x02\xee', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASVcAEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAFaAAAAgAAABKUAAAKSAAABWwAAAJ4AAASkAAAC
+kQAAAAAAAAAABgAAAAFbAAAAngAABKQAAAKRlIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMDGFnZ3JlZ2F0aW9uc5R9lCiMB0NhYmVsbG+US2WGlI+UKIwLQ29uY2F0ZW5hdGWUkIwH
+RXNwZWNpZZRLZYaUj5R1Svz///+GlIwIZ2JfYXR0cnOUXZRoFUtlhpRhSv3///+GlGgFSwF1jAph
+dHRyaWJ1dGVzlH2UKGgRSwFoFUsBdYwFbWV0YXOUfZR1YmF1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x014\x00\x00\x00\xab\x00\x00\x04\xb8\x00\x00\x02\xcc\x00\x00\x015\x00\x00\x00\xc9\x00\x00\x04\xb7\x00\x00\x02\xcb\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x015\x00\x00\x00\xc9\x00\x00\x04\xb7\x00\x00\x02\xcb', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [('Cabello - Concatenate', -1)], '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASV8wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdMAAABO
+AAAELAAAAsQAAAHUAAAAbAAABCsAAALDAAAAAAAAAAAGAAAAAdQAAABsAAAEKwAAAsOUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwHUmVzcGlyYZRLAYaUjAlhdmFpbGFibGWUSwCGlIwKVW5uYW1lZDog
+MJRLAoaUaBVLAYaUjAVQYXRhc5RLAYaUaBVLAoaUjAdDYWJlbGxvlEsBhpRoFUsDhpSMBkRpZW50
+ZZRLAYaUjAlhdHRyaWJ1dGWUSwCGlIwHRXNwZWNpZZRLAYaUaCJLAYaUdUr+////hpRoB0sBdYwK
+YXR0cmlidXRlc5R9lChoF0sCaCBLAWgdSwFoE0sBaBpLAWgkSwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="7" format="pickle">gASVbwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAFaAAAAgAAABKUAAAKSAAABWwAAAJ4AAASkAAAC
+kQAAAAAAAAAABgAAAAFbAAAAngAABKQAAAKRlIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMDGFnZ3JlZ2F0aW9uc5R9lCiMBkRpZW50ZZRLZYaUj5SMB0VzcGVjaWWUS2WGlI+UKIwL
+Q29uY2F0ZW5hdGWUkHVK/P///4aUjAhnYl9hdHRyc5RdlGgRS2WGlGFK/f///4aUaAVLAXWMCmF0
+dHJpYnV0ZXOUfZQoaBFLAWgUSwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="8" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02^\x00\x00\x00\xdd\x00\x00\x05\xe2\x00\x00\x02\xfe\x00\x00\x02_\x00\x00\x00\xfb\x00\x00\x05\xe1\x00\x00\x02\xfd\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02_\x00\x00\x00\xfb\x00\x00\x05\xe1\x00\x00\x02\xfd', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="9" format="pickle">gASV+QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdMAAABO
+AAAELAAAAsQAAAHUAAAAbAAABCsAAALDAAAAAAAAAAAGAAAAAdQAAABsAAAEKwAAAsOUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwKVW5uYW1lZDogMJRLAoaUjAlhdmFpbGFibGWUSwCGlIwHUmVzcGly
+YZRLAYaUaBVLAYaUjAZEaWVudGWUSwGGlIwJYXR0cmlidXRllEsAhpSMBVBhdGFzlEsBhpRoHEsB
+hpSMB0NhYmVsbG+USwGGlGgcSwKGlIwHRXNwZWNpZZRLAYaUjAVjbGFzc5RLAIaUdUr+////hpRo
+B0sBdYwKYXR0cmlidXRlc5R9lChoE0sCaBpLAWghSwFoF0sBaB5LAWgkSwF1jAVtZXRhc5R9lHVi
+YXUu
+</properties>
+		<properties node_id="10" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02_\x00\x00\x00\xe3\x00\x00\x03\xa0\x00\x00\x02/\x00\x00\x02`\x00\x00\x01\x01\x00\x00\x03\x9f\x00\x00\x02.\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02`\x00\x00\x01\x01\x00\x00\x03\x9f\x00\x00\x02.', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="11" format="pickle">gASVgAEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
+AowObWF4X25vZGVfd2lkdGiUS7CMDm1heF90cmVlX2RlcHRolEsCjBFyZWdyZXNzaW9uX2NvbG9y
+c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAAAAAAAAAAAAL/AAADLwAAAAEA
+AAAeAAAC/gAAAy4AAAAAAAAAAAYAAAAAAQAAAB4AAAL+AAADLpSMEXNob3dfaW50ZXJtZWRpYXRl
+lIiMBHpvb22USwWMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3
+aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBJ0YXJnZXRfY2xh
+c3NfaW5kZXiUSwBoCksBdYwHY2xhc3Nlc5SMCE1hbWlmZXJvlIwGUmVwdGlslIaUdWJhdS4=
+</properties>
+		<properties node_id="12" format="pickle">gASV+QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAtUAAACA
+AAAFLgAAAvYAAALWAAAAngAABS0AAAL1AAAAAAAAAAAGAAAAAtYAAACeAAAFLQAAAvWUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwKVW5uYW1lZDogMJRLAoaUjAlhdmFpbGFibGWUSwCGlIwHUmVzcGly
+YZRLAYaUaBVLAYaUjAdDYWJlbGxvlEsBhpRoFUsChpSMBkRpZW50ZZRLAYaUjAlhdHRyaWJ1dGWU
+SwCGlIwFUGF0YXOUSwGGlGgfSwGGlIwHRXNwZWNpZZRLAYaUjAVjbGFzc5RLAIaUdUr+////hpRo
+B0sBdYwKYXR0cmlidXRlc5R9lChoE0sCaB1LAWgaSwFoF0sBaCFLAWgkSwF1jAVtZXRhc5R9lHVi
+YXUu
+</properties>
+		<properties node_id="13" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02_\x00\x00\x00\xe3\x00\x00\x03\xa0\x00\x00\x02/\x00\x00\x02`\x00\x00\x01\x01\x00\x00\x03\x9f\x00\x00\x02.\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02`\x00\x00\x01\x01\x00\x00\x03\x9f\x00\x00\x02.', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="14" format="pickle">gASVgAEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
+AowObWF4X25vZGVfd2lkdGiUS7CMDm1heF90cmVlX2RlcHRolEsCjBFyZWdyZXNzaW9uX2NvbG9y
+c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAACKQAAAHoAAAU0AAACjAAAAioA
+AACYAAAFMwAAAosAAAAAAAAAAAYAAAACKgAAAJgAAAUzAAACi5SMEXNob3dfaW50ZXJtZWRpYXRl
+lIiMBHpvb22USwWMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3
+aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBJ0YXJnZXRfY2xh
+c3NfaW5kZXiUSwBoCksBdYwHY2xhc3Nlc5SMCE1hbWlmZXJvlIwGUmVwdGlslIaUdWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
